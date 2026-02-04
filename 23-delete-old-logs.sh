@@ -6,7 +6,7 @@ Y="\e[33m"
 N="\e[0m"
 
 LOGS_DIR=/home/ec2-user/app-logs
-LOGS_FILE="$LOGS_DIR/$0.log"
+LOGS_FILE="$LOGS_DIR/$(basename "$0").log"
 
 if [ ! -d $LOGS_DIR ]; then
     echo -e "$LOGS_DIR does not exitst"
